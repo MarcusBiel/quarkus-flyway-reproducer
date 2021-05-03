@@ -1,0 +1,496 @@
+me@Me-MBP backend.my.com % docker compose -f docker-compose.yml up --build
+The new 'docker compose' command is currently experimental. To provide feedback or request new features please open issues at https://github.com/docker/compose-cli
+[+] Running 1/1
+ ⠿ backendmycom_db_1  Restarted                                                                                                 0.4s
+Attaching to backendmycom_db_1
+backendmycom_db_1 | 2021-04-23 22:04:29+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 1:10.5.9+maria~focal started.
+backendmycom_db_1 | 2021-04-23 22:04:30+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+backendmycom_db_1 | 2021-04-23 22:04:30+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 1:10.5.9+maria~focal started.
+backendmycom_db_1 | 2021-04-23 22:04:30+00:00 [Note] [Entrypoint]: Initializing database files
+backendmycom_db_1 | PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
+backendmycom_db_1 | To do so, start the server, then issue the following commands:
+backendmycom_db_1 | '/usr/bin/mysqladmin' -u root password 'new-password'
+backendmycom_db_1 | '/usr/bin/mysqladmin' -u root -h  password 'new-password'
+backendmycom_db_1 | Alternatively you can run:
+backendmycom_db_1 | '/usr/bin/mysql_secure_installation'
+backendmycom_db_1 | which will also give you the option of removing the test
+backendmycom_db_1 | databases and anonymous user created by default.  This is
+backendmycom_db_1 | strongly recommended for production servers.
+backendmycom_db_1 | See the MariaDB Knowledgebase at https://mariadb.com/kb or the
+backendmycom_db_1 | MySQL manual for more instructions.
+backendmycom_db_1 | Please report any problems at https://mariadb.org/jira
+backendmycom_db_1 | The latest information about MariaDB is available at https://mariadb.org/.
+backendmycom_db_1 | You can find additional information about the MySQL part at:
+backendmycom_db_1 | https://dev.mysql.com
+backendmycom_db_1 | Consider joining MariaDB's strong and vibrant community:
+backendmycom_db_1 | https://mariadb.org/get-involved/
+backendmycom_db_1 | 2021-04-23 22:04:31+00:00 [Note] [Entrypoint]: Database files initialized
+backendmycom_db_1 | 2021-04-23 22:04:31+00:00 [Note] [Entrypoint]: Starting temporary server
+backendmycom_db_1 | 2021-04-23 22:04:31+00:00 [Note] [Entrypoint]: Waiting for server startup
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] mysqld (mysqld 10.5.9-MariaDB-1:10.5.9+maria~focal) starting as process 102 ...
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Uses event mutexes
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Number of pools: 1
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Using Linux native AIO
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Completed initialization of buffer pool
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: 128 rollback segments are active.
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: 10.5.9 started; log sequence number 45106; transaction id 20
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] Plugin 'FEEDBACK' is disabled.
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] InnoDB: Buffer pool(s) load completed at 210423 22:04:31
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Warning] 'user' entry 'root@f2ef28a91412' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Warning] 'proxies_priv' entry '@% root@f2ef28a91412' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] Reading of all Master_info entries succeeded
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] Added new Master_info '' to hash table
+backendmycom_db_1 | 2021-04-23 22:04:31 0 [Note] mysqld: ready for connections.
+backendmycom_db_1 | Version: '10.5.9-MariaDB-1:10.5.9+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+backendmycom_db_1 | 2021-04-23 22:04:32+00:00 [Note] [Entrypoint]: Temporary server started.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+backendmycom_db_1 | 2021-04-23 22:04:52 5 [Warning] 'proxies_priv' entry '@% root@f2ef28a91412' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-04-23 22:04:52+00:00 [Note] [Entrypoint]: Creating database my-backend
+backendmycom_db_1 | 2021-04-23 22:04:52+00:00 [Note] [Entrypoint]: Creating user admin
+backendmycom_db_1 | 2021-04-23 22:04:52+00:00 [Note] [Entrypoint]: Giving user admin access to schema my-backend
+backendmycom_db_1 | 2021-04-23 22:04:52+00:00 [Note] [Entrypoint]: Stopping temporary server
+backendmycom_db_1 | 2021-04-23 22:04:52 0 [Note] mysqld (initiated by: root[root] @ localhost []): Normal shutdown
+backendmycom_db_1 | 2021-04-23 22:04:52 0 [Note] Event Scheduler: Purging the queue. 0 events
+backendmycom_db_1 | 2021-04-23 22:04:52 0 [Note] InnoDB: FTS optimize thread exiting.
+backendmycom_db_1 | 2021-04-23 22:04:52 0 [Note] InnoDB: Starting shutdown...
+backendmycom_db_1 | 2021-04-23 22:04:52 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-04-23 22:04:52 0 [Note] InnoDB: Buffer pool(s) dump completed at 210423 22:04:52
+backendmycom_db_1 | 2021-04-23 22:04:52 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+backendmycom_db_1 | 2021-04-23 22:04:52 0 [Note] InnoDB: Shutdown completed; log sequence number 45118; transaction id 21
+backendmycom_db_1 | 2021-04-23 22:04:52 0 [Note] mysqld: Shutdown complete
+backendmycom_db_1 | 2021-04-23 22:04:53+00:00 [Note] [Entrypoint]: Temporary server stopped
+backendmycom_db_1 | 2021-04-23 22:04:53+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] mysqld (mysqld 10.5.9-MariaDB-1:10.5.9+maria~focal) starting as process 1 ...
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Uses event mutexes
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Number of pools: 1
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Using Linux native AIO
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Completed initialization of buffer pool
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: 128 rollback segments are active.
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: 10.5.9 started; log sequence number 45118; transaction id 20
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] Plugin 'FEEDBACK' is disabled.
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] InnoDB: Buffer pool(s) load completed at 210423 22:04:53
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] Server socket created on IP: '::'.
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Warning] 'proxies_priv' entry '@% root@f2ef28a91412' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] Reading of all Master_info entries succeeded
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] Added new Master_info '' to hash table
+backendmycom_db_1 | 2021-04-23 22:04:53 0 [Note] mysqld: ready for connections.
+backendmycom_db_1 | Version: '10.5.9-MariaDB-1:10.5.9+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 5 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 6 indexes inside InnoDB, which is different from the number of indexes 5 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 6 indexes inside InnoDB, which is different from the number of indexes 6 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 7 indexes inside InnoDB, which is different from the number of indexes 6 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 7 indexes inside InnoDB, which is different from the number of indexes 7 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:47 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:48 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 8 indexes inside InnoDB, which is different from the number of indexes 7 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:48 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-04-23 22:05:48 4 [ERROR] InnoDB: Table my@002dbackend/qrtz_job_details contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03 08:21:31+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 1:10.5.9+maria~focal started.
+backendmycom_db_1 | 2021-05-03 08:21:31+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+backendmycom_db_1 | 2021-05-03 08:21:31+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 1:10.5.9+maria~focal started.
+backendmycom_db_1 | 2021-05-03 08:21:31+00:00 [Note] [Entrypoint]: Initializing database files
+backendmycom_db_1 | PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
+backendmycom_db_1 | To do so, start the server, then issue the following commands:
+backendmycom_db_1 | '/usr/bin/mysqladmin' -u root password 'new-password'
+backendmycom_db_1 | '/usr/bin/mysqladmin' -u root -h  password 'new-password'
+backendmycom_db_1 | Alternatively you can run:
+backendmycom_db_1 | '/usr/bin/mysql_secure_installation'
+backendmycom_db_1 | which will also give you the option of removing the test
+backendmycom_db_1 | databases and anonymous user created by default.  This is
+backendmycom_db_1 | strongly recommended for production servers.
+backendmycom_db_1 | See the MariaDB Knowledgebase at https://mariadb.com/kb or the
+backendmycom_db_1 | MySQL manual for more instructions.
+backendmycom_db_1 | Please report any problems at https://mariadb.org/jira
+backendmycom_db_1 | The latest information about MariaDB is available at https://mariadb.org/.
+backendmycom_db_1 | You can find additional information about the MySQL part at:
+backendmycom_db_1 | https://dev.mysql.com
+backendmycom_db_1 | Consider joining MariaDB's strong and vibrant community:
+backendmycom_db_1 | https://mariadb.org/get-involved/
+backendmycom_db_1 | 2021-05-03 08:21:33+00:00 [Note] [Entrypoint]: Database files initialized
+backendmycom_db_1 | 2021-05-03 08:21:33+00:00 [Note] [Entrypoint]: Starting temporary server
+backendmycom_db_1 | 2021-05-03 08:21:33+00:00 [Note] [Entrypoint]: Waiting for server startup
+ 2021-05-03  8:21:33 0 [Note] mysqld (mysqld 10.5.9-MariaDB-1:10.5.9+maria~focal) starting as process 103 ...
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Uses event mutexes
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Number of pools: 1
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Using Linux native AIO
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Completed initialization of buffer pool
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: 128 rollback segments are active.
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: 10.5.9 started; log sequence number 45106; transaction id 20
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] Plugin 'FEEDBACK' is disabled.
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] InnoDB: Buffer pool(s) load completed at 210503  8:21:33
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Warning] 'user' entry 'root@f2ef28a91412' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Warning] 'proxies_priv' entry '@% root@f2ef28a91412' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] Reading of all Master_info entries succeeded
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] Added new Master_info '' to hash table
+backendmycom_db_1 | 2021-05-03  8:21:33 0 [Note] mysqld: ready for connections.
+backendmycom_db_1 | Version: '10.5.9-MariaDB-1:10.5.9+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+backendmycom_db_1 | 2021-05-03 08:21:34+00:00 [Note] [Entrypoint]: Temporary server started.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+backendmycom_db_1 | 2021-05-03  8:21:51 5 [Warning] 'proxies_priv' entry '@% root@f2ef28a91412' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03 08:21:51+00:00 [Note] [Entrypoint]: Creating database my-backend
+backendmycom_db_1 | 2021-05-03 08:21:51+00:00 [Note] [Entrypoint]: Creating user admin
+backendmycom_db_1 | 2021-05-03 08:21:51+00:00 [Note] [Entrypoint]: Giving user admin access to schema my-backend
+backendmycom_db_1 | 2021-05-03 08:21:51+00:00 [Note] [Entrypoint]: Stopping temporary server
+backendmycom_db_1 | 2021-05-03  8:21:51 0 [Note] mysqld (initiated by: root[root] @ localhost []): Normal shutdown
+backendmycom_db_1 | 2021-05-03  8:21:51 0 [Note] Event Scheduler: Purging the queue. 0 events
+backendmycom_db_1 | 2021-05-03  8:21:51 0 [Note] InnoDB: FTS optimize thread exiting.
+backendmycom_db_1 | 2021-05-03  8:21:51 0 [Note] InnoDB: Starting shutdown...
+backendmycom_db_1 | 2021-05-03  8:21:51 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-05-03  8:21:51 0 [Note] InnoDB: Buffer pool(s) dump completed at 210503  8:21:51
+backendmycom_db_1 | 2021-05-03  8:21:51 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+backendmycom_db_1 | 2021-05-03  8:21:51 0 [Note] InnoDB: Shutdown completed; log sequence number 45118; transaction id 21
+backendmycom_db_1 | 2021-05-03  8:21:51 0 [Note] mysqld: Shutdown complete
+backendmycom_db_1 | 2021-05-03 08:21:52+00:00 [Note] [Entrypoint]: Temporary server stopped
+backendmycom_db_1 | 2021-05-03 08:21:52+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] mysqld (mysqld 10.5.9-MariaDB-1:10.5.9+maria~focal) starting as process 1 ...
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Uses event mutexes
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Number of pools: 1
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Using Linux native AIO
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Completed initialization of buffer pool
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: 128 rollback segments are active.
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: 10.5.9 started; log sequence number 45118; transaction id 20
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] Plugin 'FEEDBACK' is disabled.
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] InnoDB: Buffer pool(s) load completed at 210503  8:21:52
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] Server socket created on IP: '::'.
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Warning] 'proxies_priv' entry '@% root@f2ef28a91412' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] Reading of all Master_info entries succeeded
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] Added new Master_info '' to hash table
+backendmycom_db_1 | 2021-05-03  8:21:52 0 [Note] mysqld: ready for connections.
+backendmycom_db_1 | Version: '10.5.9-MariaDB-1:10.5.9+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+^CGracefully stopping...
+[+] Running 2/1
+ ⠿ Container backendmycom_db_1     Removed                                                                                      0.4s
+ ⠿ Network "backendmycom_default"  Removed                                                                                      0.0s
+me@Me-MBP backend.my.com % docker compose -f docker-compose.yml up --build
+The new 'docker compose' command is currently experimental. To provide feedback or request new features please open issues at https://github.com/docker/compose-cli
+[+] Running 2/2
+ ⠿ Network "backendmycom_default"  Created                                                                                      0.0s
+ ⠿ backendmycom_db_1               Created                                                                                      0.1s
+Attaching to backendmycom_db_1
+backendmycom_db_1 | 2021-05-03 08:23:44+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 1:10.5.9+maria~focal started.
+backendmycom_db_1 | 2021-05-03 08:23:44+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+backendmycom_db_1 | 2021-05-03 08:23:44+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 1:10.5.9+maria~focal started.
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] mysqld (mysqld 10.5.9-MariaDB-1:10.5.9+maria~focal) starting as process 1 ...
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Uses event mutexes
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Number of pools: 1
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Using Linux native AIO
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Completed initialization of buffer pool
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: 128 rollback segments are active.
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: 10.5.9 started; log sequence number 45130; transaction id 20
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] Plugin 'FEEDBACK' is disabled.
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] Server socket created on IP: '::'.
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] InnoDB: Buffer pool(s) load completed at 210503  8:23:44
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Warning] 'proxies_priv' entry '@% root@f2ef28a91412' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] Reading of all Master_info entries succeeded
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] Added new Master_info '' to hash table
+backendmycom_db_1 | 2021-05-03  8:23:44 0 [Note] mysqld: ready for connections.
+backendmycom_db_1 | Version: '10.5.9-MariaDB-1:10.5.9+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 5 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 6 indexes inside InnoDB, which is different from the number of indexes 5 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 6 indexes inside InnoDB, which is different from the number of indexes 6 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 7 indexes inside InnoDB, which is different from the number of indexes 6 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 7 indexes inside InnoDB, which is different from the number of indexes 7 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:55 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:56 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 8 indexes inside InnoDB, which is different from the number of indexes 7 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:56 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:29:56 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_job_details contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+^CGracefully stopping...
+[+] Running 2/1
+ ⠿ Container backendmycom_db_1     Removed                                                                                      0.6s
+ ⠿ Network "backendmycom_default"  Removed                                                                                      0.1s
+me@Me-MBP backend.my.com % docker compose -f docker-compose.yml up --build
+The new 'docker compose' command is currently experimental. To provide feedback or request new features please open issues at https://github.com/docker/compose-cli
+[+] Running 1/0
+ ⠿ Network "backendmycom_default"  Created                                                                                      0.0s
+ ⠋ backendmycom_db_1               Creating                                                                                     0.0s
+Error response from daemon: invalid mount config for type "bind": bind source path does not exist: /Users/me/backend.my.com/data/mariadb
+me@Me-MBP backend.my.com % docker compose -f docker-compose.yml up --build
+The new 'docker compose' command is currently experimental. To provide feedback or request new features please open issues at https://github.com/docker/compose-cli
+[+] Running 1/0
+ ⠿ backendmycom_db_1  Created                                                                                                   0.1s
+Attaching to backendmycom_db_1
+backendmycom_db_1 | 2021-05-03 08:37:47+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 1:10.5.9+maria~focal started.
+backendmycom_db_1 | 2021-05-03 08:37:47+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+backendmycom_db_1 | 2021-05-03 08:37:47+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 1:10.5.9+maria~focal started.
+backendmycom_db_1 | 2021-05-03 08:37:47+00:00 [Note] [Entrypoint]: Initializing database files
+backendmycom_db_1 | PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
+backendmycom_db_1 | To do so, start the server, then issue the following commands:
+backendmycom_db_1 | '/usr/bin/mysqladmin' -u root password 'new-password'
+backendmycom_db_1 | '/usr/bin/mysqladmin' -u root -h  password 'new-password'
+backendmycom_db_1 | Alternatively you can run:
+backendmycom_db_1 | '/usr/bin/mysql_secure_installation'
+backendmycom_db_1 | which will also give you the option of removing the test
+backendmycom_db_1 | databases and anonymous user created by default.  This is
+backendmycom_db_1 | strongly recommended for production servers.
+backendmycom_db_1 | See the MariaDB Knowledgebase at https://mariadb.com/kb or the
+backendmycom_db_1 | MySQL manual for more instructions.
+backendmycom_db_1 | Please report any problems at https://mariadb.org/jira
+backendmycom_db_1 | The latest information about MariaDB is available at https://mariadb.org/.
+backendmycom_db_1 | You can find additional information about the MySQL part at:
+backendmycom_db_1 | https://dev.mysql.com
+backendmycom_db_1 | Consider joining MariaDB's strong and vibrant community:
+backendmycom_db_1 | https://mariadb.org/get-involved/
+backendmycom_db_1 | 2021-05-03 08:37:48+00:00 [Note] [Entrypoint]: Database files initialized
+backendmycom_db_1 | 2021-05-03 08:37:48+00:00 [Note] [Entrypoint]: Starting temporary server
+backendmycom_db_1 | 2021-05-03 08:37:48+00:00 [Note] [Entrypoint]: Waiting for server startup
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] mysqld (mysqld 10.5.9-MariaDB-1:10.5.9+maria~focal) starting as process 105 ...
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Uses event mutexes
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Number of pools: 1
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Using Linux native AIO
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Completed initialization of buffer pool
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: 128 rollback segments are active.
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: 10.5.9 started; log sequence number 45106; transaction id 20
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] Plugin 'FEEDBACK' is disabled.
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] InnoDB: Buffer pool(s) load completed at 210503  8:37:48
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Warning] 'user' entry 'root@f2a88604a4d3' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Warning] 'proxies_priv' entry '@% root@f2a88604a4d3' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] Reading of all Master_info entries succeeded
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] Added new Master_info '' to hash table
+backendmycom_db_1 | 2021-05-03  8:37:48 0 [Note] mysqld: ready for connections.
+backendmycom_db_1 | Version: '10.5.9-MariaDB-1:10.5.9+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+backendmycom_db_1 | 2021-05-03 08:37:49+00:00 [Note] [Entrypoint]: Temporary server started.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+backendmycom_db_1 | 2021-05-03  8:38:09 5 [Warning] 'proxies_priv' entry '@% root@f2a88604a4d3' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03 08:38:09+00:00 [Note] [Entrypoint]: Creating database my-backend
+backendmycom_db_1 | 2021-05-03 08:38:09+00:00 [Note] [Entrypoint]: Creating user admin
+backendmycom_db_1 | 2021-05-03 08:38:09+00:00 [Note] [Entrypoint]: Giving user admin access to schema my-backend
+backendmycom_db_1 | 2021-05-03 08:38:09+00:00 [Note] [Entrypoint]: Stopping temporary server
+backendmycom_db_1 | 2021-05-03  8:38:09 0 [Note] mysqld (initiated by: root[root] @ localhost []): Normal shutdown
+backendmycom_db_1 | 2021-05-03  8:38:09 0 [Note] Event Scheduler: Purging the queue. 0 events
+backendmycom_db_1 | 2021-05-03  8:38:09 0 [Note] InnoDB: FTS optimize thread exiting.
+backendmycom_db_1 | 2021-05-03  8:38:09 0 [Note] InnoDB: Starting shutdown...
+backendmycom_db_1 | 2021-05-03  8:38:09 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-05-03  8:38:09 0 [Note] InnoDB: Buffer pool(s) dump completed at 210503  8:38:09
+backendmycom_db_1 | 2021-05-03  8:38:09 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+backendmycom_db_1 | 2021-05-03  8:38:09 0 [Note] InnoDB: Shutdown completed; log sequence number 45118; transaction id 21
+backendmycom_db_1 | 2021-05-03  8:38:09 0 [Note] mysqld: Shutdown complete
+backendmycom_db_1 | 2021-05-03 08:38:10+00:00 [Note] [Entrypoint]: Temporary server stopped
+backendmycom_db_1 | 2021-05-03 08:38:10+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] mysqld (mysqld 10.5.9-MariaDB-1:10.5.9+maria~focal) starting as process 1 ...
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Uses event mutexes
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Number of pools: 1
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Using Linux native AIO
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Completed initialization of buffer pool
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: 128 rollback segments are active.
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: 10.5.9 started; log sequence number 45118; transaction id 20
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] Plugin 'FEEDBACK' is disabled.
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] InnoDB: Buffer pool(s) load completed at 210503  8:38:10
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] Server socket created on IP: '::'.
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Warning] 'proxies_priv' entry '@% root@f2a88604a4d3' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] Reading of all Master_info entries succeeded
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] Added new Master_info '' to hash table
+backendmycom_db_1 | 2021-05-03  8:38:10 0 [Note] mysqld: ready for connections.
+backendmycom_db_1 | Version: '10.5.9-MariaDB-1:10.5.9+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 5 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 6 indexes inside InnoDB, which is different from the number of indexes 5 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 6 indexes inside InnoDB, which is different from the number of indexes 6 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 7 indexes inside InnoDB, which is different from the number of indexes 6 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 7 indexes inside InnoDB, which is different from the number of indexes 7 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:21 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:22 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_triggers contains 8 indexes inside InnoDB, which is different from the number of indexes 7 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:22 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+backendmycom_db_1 | 2021-05-03  8:38:22 3 [ERROR] InnoDB: Table my@002dbackend/qrtz_job_details contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  Have you mixed up .frm files from different installations? See https://mariadb.com/kb/en/innodb-troubleshooting/
+^CGracefully stopping...
+[+] Running 2/1
+ ⠿ Container backendmycom_db_1     Removed                                                                                      0.6s
+ ⠿ Network "backendmycom_default"  Removed                                                                                      0.1s
+me@Me-MBP backend.my.com % docker compose -f docker-compose.yml up --build
+The new 'docker compose' command is currently experimental. To provide feedback or request new features please open issues at https://github.com/docker/compose-cli
+[+] Running 2/0
+ ⠿ Network "backendmycom_default"  Created                                                                                      0.0s
+ ⠿ backendmycom_db_1               Created                                                                                      0.0s
+Attaching to backendmycom_db_1
+backendmycom_db_1 | 2021-05-03 08:40:52+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 1:10.5.9+maria~focal started.
+backendmycom_db_1 | 2021-05-03 08:40:52+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+backendmycom_db_1 | 2021-05-03 08:40:52+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 1:10.5.9+maria~focal started.
+backendmycom_db_1 | 2021-05-03 08:40:52+00:00 [Note] [Entrypoint]: Initializing database files
+backendmycom_db_1 | PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
+backendmycom_db_1 | To do so, start the server, then issue the following commands:
+backendmycom_db_1 | '/usr/bin/mysqladmin' -u root password 'new-password'
+backendmycom_db_1 | '/usr/bin/mysqladmin' -u root -h  password 'new-password'
+backendmycom_db_1 | Alternatively you can run:
+backendmycom_db_1 | '/usr/bin/mysql_secure_installation'
+backendmycom_db_1 | which will also give you the option of removing the test
+backendmycom_db_1 | databases and anonymous user created by default.  This is
+backendmycom_db_1 | strongly recommended for production servers.
+backendmycom_db_1 | See the MariaDB Knowledgebase at https://mariadb.com/kb or the
+backendmycom_db_1 | MySQL manual for more instructions.
+backendmycom_db_1 | Please report any problems at https://mariadb.org/jira
+backendmycom_db_1 | The latest information about MariaDB is available at https://mariadb.org/.
+backendmycom_db_1 | You can find additional information about the MySQL part at:
+backendmycom_db_1 | https://dev.mysql.com
+backendmycom_db_1 | Consider joining MariaDB's strong and vibrant community:
+backendmycom_db_1 | https://mariadb.org/get-involved/
+backendmycom_db_1 | 2021-05-03 08:40:53+00:00 [Note] [Entrypoint]: Database files initialized
+backendmycom_db_1 | 2021-05-03 08:40:53+00:00 [Note] [Entrypoint]: Starting temporary server
+backendmycom_db_1 | 2021-05-03 08:40:53+00:00 [Note] [Entrypoint]: Waiting for server startup
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Note] mysqld (mysqld 10.5.9-MariaDB-1:10.5.9+maria~focal) starting as process 101 ...
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Note] InnoDB: Uses event mutexes
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Note] InnoDB: Number of pools: 1
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Note] InnoDB: Using Linux native AIO
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Note] InnoDB: Completed initialization of buffer pool
+backendmycom_db_1 | 2021-05-03  8:40:53 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] InnoDB: 128 rollback segments are active.
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] InnoDB: 10.5.9 started; log sequence number 45106; transaction id 20
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] Plugin 'FEEDBACK' is disabled.
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] InnoDB: Buffer pool(s) load completed at 210503  8:40:54
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Warning] 'user' entry 'root@42a01833d23d' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Warning] 'proxies_priv' entry '@% root@42a01833d23d' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] Reading of all Master_info entries succeeded
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] Added new Master_info '' to hash table
+backendmycom_db_1 | 2021-05-03  8:40:54 0 [Note] mysqld: ready for connections.
+backendmycom_db_1 | Version: '10.5.9-MariaDB-1:10.5.9+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+backendmycom_db_1 | 2021-05-03 08:40:54+00:00 [Note] [Entrypoint]: Temporary server started.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+backendmycom_db_1 | Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+backendmycom_db_1 | 2021-05-03  8:41:10 5 [Warning] 'proxies_priv' entry '@% root@42a01833d23d' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03 08:41:10+00:00 [Note] [Entrypoint]: Creating database my-backend
+backendmycom_db_1 | 2021-05-03 08:41:10+00:00 [Note] [Entrypoint]: Creating user admin
+backendmycom_db_1 | 2021-05-03 08:41:10+00:00 [Note] [Entrypoint]: Giving user admin access to schema my-backend
+backendmycom_db_1 | 2021-05-03 08:41:10+00:00 [Note] [Entrypoint]: Stopping temporary server
+backendmycom_db_1 | 2021-05-03  8:41:10 0 [Note] mysqld (initiated by: root[root] @ localhost []): Normal shutdown
+backendmycom_db_1 | 2021-05-03  8:41:10 0 [Note] Event Scheduler: Purging the queue. 0 events
+backendmycom_db_1 | 2021-05-03  8:41:10 0 [Note] InnoDB: FTS optimize thread exiting.
+backendmycom_db_1 | 2021-05-03  8:41:10 0 [Note] InnoDB: Starting shutdown...
+backendmycom_db_1 | 2021-05-03  8:41:10 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-05-03  8:41:10 0 [Note] InnoDB: Buffer pool(s) dump completed at 210503  8:41:10
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] InnoDB: Shutdown completed; log sequence number 45118; transaction id 21
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] mysqld: Shutdown complete
+backendmycom_db_1 | 2021-05-03 08:41:11+00:00 [Note] [Entrypoint]: Temporary server stopped
+backendmycom_db_1 | 2021-05-03 08:41:11+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] mysqld (mysqld 10.5.9-MariaDB-1:10.5.9+maria~focal) starting as process 1 ...
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] InnoDB: Uses event mutexes
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] InnoDB: Number of pools: 1
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] InnoDB: Using Linux native AIO
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] InnoDB: Completed initialization of buffer pool
+backendmycom_db_1 | 2021-05-03  8:41:11 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] InnoDB: 128 rollback segments are active.
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] InnoDB: 10.5.9 started; log sequence number 45118; transaction id 20
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] Plugin 'FEEDBACK' is disabled.
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] InnoDB: Buffer pool(s) load completed at 210503  8:41:12
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] Server socket created on IP: '::'.
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Warning] 'proxies_priv' entry '@% root@42a01833d23d' ignored in --skip-name-resolve mode.
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] Reading of all Master_info entries succeeded
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] Added new Master_info '' to hash table
+backendmycom_db_1 | 2021-05-03  8:41:12 0 [Note] mysqld: ready for connections.
+backendmycom_db_1 | Version: '10.5.9-MariaDB-1:10.5.9+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+

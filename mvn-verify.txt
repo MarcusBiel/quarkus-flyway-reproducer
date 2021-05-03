@@ -1,0 +1,681 @@
+Me@My-MBP backend.my.com % mvn clean verify
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.my:my-backend >------------------
+[INFO] Building my-backend 0.9-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ my-backend ---
+[INFO] Deleting /Users/my/backend.my.com/target
+[INFO] 
+[INFO] --- quarkus-maven-plugin:1.13.3.Final:generate-code (default) @ my-backend ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ my-backend ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ my-backend ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 502 source files to /Users/my/backend.my.com/target/classes
+[INFO] 
+[INFO] --- quarkus-maven-plugin:1.13.3.Final:generate-code-tests (default) @ my-backend ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ my-backend ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ my-backend ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to /Users/my/backend.my.com/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ my-backend ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.my.plan.SalesPlanResourceTest
+14:03:49 INFO  [io.qu.fl.FlywayProcessor]] (build-5) Adding application migrations in path '/Users/my/backend.my.com/target/classes/db/migration/' using protocol 'file'
+14:03:50 INFO  [io.qu.ar.pr.BeanProcessor]] (build-33) Found unrecommended usage of private members (use package-private instead) in application beans:
+14:03:51 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:03:51 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.client-secret" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:03:51 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.sync-client.socket-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:03:51 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.hibernate.show_sql" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:03:51 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.async-client.connection-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:03:51 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.introspection-url" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:03:51 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.async-client.connection-acquisition-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:03:51 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.client-id" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:03:51 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.sync-client.connection-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:03:53 WARN  [io.qu.ru.lo.LoggingSetupRecorder]] (main) Log level TRACE for category 'org.flyway' set below minimum logging level DEBUG, promoting it to DEBUG
+14:03:53 INFO  [or.fl.co.in.li.VersionPrinter]] (main) Flyway Community Edition 7.7.3 by Redgate
+14:03:53 INFO  [or.fl.co.in.da.ba.DatabaseType]] (main) Database: jdbc:mariadb://localhost:3306/my-backend (MariaDB 10.5)
+14:03:53 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully dropped pre-schema database level objects (execution time 00:00.004s)
+14:03:53 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully cleaned schema `my-backend` (execution time 00:00.025s)
+14:03:53 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully dropped post-schema database level objects (execution time 00:00.002s)
+14:03:53 INFO  [or.fl.co.in.li.VersionPrinter]] (main) Flyway Community Edition 7.7.3 by Redgate
+14:03:53 INFO  [or.fl.co.in.sc.JdbcTableSchemaHistory]] (main) Creating Schema History table `my-backend`.`flyway_quarkus_history` ...
+14:03:53 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:53 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:53 INFO  [or.fl.co.in.co.DbMigrate]] (main) Current version of schema `my-backend`: << Empty Schema >>
+14:03:53 INFO  [or.fl.co.in.co.DbMigrate]] (main) Migrating schema `my-backend` to version "0001 - initial-schema"
+14:03:53 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: Name 'table' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+14:03:53 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:53 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: Name 'table2' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+14:03:53 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: Specified key was too long; max key length is 3072 bytes (SQL State:  - Error Code: 1071)
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.co.DbMigrate]] (main) Migrating schema `my-backend` to version "0002 - quartz-tables"
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:54 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:54 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:54 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_triggers contains 5 indexes inside InnoDB, which is different from the number of indexes 5 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_triggers contains 6 indexes inside InnoDB, which is different from the number of indexes 5 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:54 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_triggers contains 6 indexes inside InnoDB, which is different from the number of indexes 6 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:54 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_triggers contains 7 indexes inside InnoDB, which is different from the number of indexes 6 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:55 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_triggers contains 7 indexes inside InnoDB, which is different from the number of indexes 7 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 2 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:55 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 3 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 3 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:55 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: InnoDB: Table my@002dbackend/qrtz_fired_triggers contains 4 indexes inside InnoDB, which is different from the number of indexes 4 defined in the MariaDB  (SQL State:  - Error Code: 1082)
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.co.DbMigrate]] (main) Migrating schema `my-backend` to version "0003 - inital-data-setup"
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 48 rows affected
+14:03:55 INFO  [or.fl.co.in.co.DbMigrate]] (main) Migrating schema `my-backend` to version "0004 - free plan"
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:03:55 INFO  [or.fl.co.in.co.DbMigrate]] (main) Successfully applied 4 migrations to schema `my-backend`, now at version v0004 (execution time 00:01.584s)
+14:03:55 WARN  [io.qu.qu.ru.QuartzScheduler]] (main) `quarkus.quartz.force-start` is deprecated and will be removed in a future version - it is recommended to switch to `quarkus.quartz.start-mode`
+14:03:56 INFO  [or.qu.im.jd.JobStoreCMT]] (main) Freed 0 triggers from 'acquired' / 'blocked' state.
+14:03:56 INFO  [or.qu.im.jd.JobStoreCMT]] (main) Recovering 0 jobs that were in-progress at the time of the last shut-down.
+14:03:56 INFO  [or.qu.im.jd.JobStoreCMT]] (main) Recovery complete.
+14:03:56 INFO  [or.qu.im.jd.JobStoreCMT]] (main) Removed 0 'complete' triggers.
+14:03:56 INFO  [or.qu.im.jd.JobStoreCMT]] (main) Removed 0 stale fired job entries.
+14:03:56 INFO  [co.ma.TestDataGenerator]] (main) start data initialization...
+14:03:56 INFO  [co.ma.TestDataGenerator]] (main) deleted customers: 0
+14:03:56 INFO  [co.ma.TestDataGenerator]] (main) saved customer: 
+14:03:56 INFO  [co.ma.TestDataGenerator]] (main) done data initialization...
+14:03:56 INFO  [io.quarkus]] (main) Quarkus 1.13.3.Final on JVM started in 8.023s. Listening on: http://localhost:8081
+14:03:56 INFO  [io.quarkus]] (main) Profile test activated. 
+14:03:56 INFO  [io.quarkus]] (main) Installed features: [agroal, cdi, flyway, hibernate-orm, hibernate-orm-panache, hibernate-validator, jdbc-mariadb, mutiny, narayana-jta, oidc, quartz, rest-client, rest-client-jackson, resteasy, resteasy-jackson, resteasy-multipart, scheduler, security, security-properties-file, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, vertx]
+14:03:57 INFO  [co.ma.OidcProviderTenantConfigResolver]] (vert.x-eventloop-thread-22) resolving path: /api/something
+14:03:57 INFO  [co.ma.LoggingFilter]] (executor-thread-1) GET /api/something from IP:127.0.0.1:55996
+HTTP/1.1 200 OK
+Content-Length: 755
+Content-Type: application/json
+
+[
+    {
+    }
+]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.1 s - in com.my.plan.MyTest
+HTTP/1.1 200 OK
+Content-Length: 755
+Content-Type: application/json
+
+[
+    {
+    }
+]
+14:04:03 WARN  [co.ar.at.arjuna]] (pool-20-thread-1) ARJUNA012125: TwoPhaseCoordinator.beforeCompletion - failed for SynchronizationImple< 0:ffffc0a8b216:dac7:608fe6b3:50, org.hibernate.resource.transaction.backend.jta.internal.synchronization.RegisteredSynchronization@44a737f9 >: java.lang.IllegalStateException: EntityManagerFactory is closed
+        at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:530)
+        at org.hibernate.internal.SessionFactoryImpl.getCache(SessionFactoryImpl.java:828)
+        at org.hibernate.engine.spi.ActionQueue.invalidateSpaces(ActionQueue.java:666)
+        at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:628)
+        at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+        at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
+        at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+        at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:345)
+        at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+        at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:93)
+        at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1362)
+        at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:453)
+        at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3212)
+        at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2380)
+        at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447)
+        at org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl.beforeCompletion(JtaTransactionCoordinatorImpl.java:355)
+        at org.hibernate.resource.transaction.backend.jta.internal.synchronization.SynchronizationCallbackCoordinatorNonTrackingImpl.beforeCompletion(SynchronizationCallbackCoordinatorNonTrackingImpl.java:47)
+        at org.hibernate.resource.transaction.backend.jta.internal.synchronization.RegisteredSynchronization.beforeCompletion(RegisteredSynchronization.java:37)
+        at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:76)
+        at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:360)
+        at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:91)
+        at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+        at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1295)
+        at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:126)
+        at io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager.commit(CDIDelegatingTransactionManager.java:97)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorBase.endTransaction(TransactionalInterceptorBase.java:313)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorBase.invokeInOurTx(TransactionalInterceptorBase.java:160)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorBase.invokeInOurTx(TransactionalInterceptorBase.java:100)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorRequired.doIntercept(TransactionalInterceptorRequired.java:32)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorBase.intercept(TransactionalInterceptorBase.java:53)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorRequired.intercept(TransactionalInterceptorRequired.java:26)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorRequired_Bean.intercept(TransactionalInterceptorRequired_Bean.zig:340)
+        at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+        at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+        at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+        at com.my.payment.webhook.orm.StripeRawMessageRepository_Subclass.findNextStripeRawMessage(StripeRawMessageRepository_Subclass.zig:445)
+        at com.my.payment.webhook.orm.StripeRawMessageRepository_ClientProxy.findNextStripeRawMessage(StripeRawMessageRepository_ClientProxy.zig:979)
+        at com.my.payment.webhook.StripeEventProcessingService.process(StripeEventProcessingService.java:59)
+        at com.my.payment.webhook.StripeEventProcessingService_ClientProxy.process(StripeEventProcessingService_ClientProxy.zig:203)
+        at com.my.payment.webhook.StripeEventProcessTask.run(StripeEventProcessTask.java:25)
+        at com.my.payment.webhook.StripeEventProcessTask_Subclass.run$$superaccessor1(StripeEventProcessTask_Subclass.zig:191)
+        at com.my.payment.webhook.StripeEventProcessTask_Subclass$$function$$1.apply(StripeEventProcessTask_Subclass$$function$$1.zig:29)
+        at io.quarkus.arc.impl.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:54)
+        at io.quarkus.arc.impl.ActivateRequestContextInterceptor.aroundInvoke(ActivateRequestContextInterceptor.java:24)
+        at io.quarkus.arc.impl.ActivateRequestContextInterceptor_Bean.intercept(ActivateRequestContextInterceptor_Bean.zig:275)
+        at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+        at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+        at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+        at com.my.payment.webhook.StripeEventProcessTask_Subclass.run(StripeEventProcessTask_Subclass.zig:149)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+        at java.base/java.lang.Thread.run(Thread.java:831)
+
+14:04:03 WARN  [co.ar.at.jta]] (pool-20-thread-1) ARJUNA016045: attempted rollback of < formatId=131077, gtrid_length=35, bqual_length=36, tx_uid=0:ffffc0a8b216:dac7:608fe6b3:4f, node_name=quarkus, branch_uid=0:ffffc0a8b216:dac7:608fe6b3:52, subordinatenodename=null, eis_name=0 > (io.agroal.narayana.LocalXAResource@33c69e3) failed with exception code XAException.XAER_RMERR: javax.transaction.xa.XAException: Error trying to transactionRollback local transaction: The object is already closed [90007-197]
+        at io.agroal.narayana.LocalXAResource.xaException(LocalXAResource.java:140)
+        at io.agroal.narayana.LocalXAResource.xaException(LocalXAResource.java:134)
+        at io.agroal.narayana.LocalXAResource.rollback(LocalXAResource.java:88)
+        at com.arjuna.ats.internal.jta.resources.arjunacore.XAResourceRecord.topLevelAbort(XAResourceRecord.java:362)
+        at com.arjuna.ats.arjuna.coordinator.BasicAction.doAbort(BasicAction.java:3032)
+        at com.arjuna.ats.arjuna.coordinator.BasicAction.doAbort(BasicAction.java:3011)
+        at com.arjuna.ats.arjuna.coordinator.BasicAction.Abort(BasicAction.java:1674)
+        at com.arjuna.ats.arjuna.coordinator.BasicAction.Abort(BasicAction.java:1615)
+        at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:99)
+        at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+        at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1295)
+        at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:126)
+        at io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager.commit(CDIDelegatingTransactionManager.java:97)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorBase.endTransaction(TransactionalInterceptorBase.java:313)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorBase.invokeInOurTx(TransactionalInterceptorBase.java:160)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorBase.invokeInOurTx(TransactionalInterceptorBase.java:100)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorRequired.doIntercept(TransactionalInterceptorRequired.java:32)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorBase.intercept(TransactionalInterceptorBase.java:53)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorRequired.intercept(TransactionalInterceptorRequired.java:26)
+        at io.quarkus.narayana.jta.runtime.interceptor.TransactionalInterceptorRequired_Bean.intercept(TransactionalInterceptorRequired_Bean.zig:340)
+        at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+        at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+        at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+        at io.quarkus.arc.impl.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:54)
+        at io.quarkus.arc.impl.ActivateRequestContextInterceptor.aroundInvoke(ActivateRequestContextInterceptor.java:24)
+        at io.quarkus.arc.impl.ActivateRequestContextInterceptor_Bean.intercept(ActivateRequestContextInterceptor_Bean.zig:275)
+        at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+        at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+        at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+        at com.my.payment.webhook.StripeEventProcessTask_Subclass.run(StripeEventProcessTask_Subclass.zig:149)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+        at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLException: The object is already closed [90007-197]
+        at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+        at org.h2.message.DbException.get(DbException.java:179)
+        at org.h2.message.DbException.get(DbException.java:155)
+        at org.h2.message.DbException.get(DbException.java:144)
+        at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1523)
+        at org.h2.jdbc.JdbcConnection.checkClosedForWrite(JdbcConnection.java:1512)
+        at org.h2.jdbc.JdbcConnection.rollback(JdbcConnection.java:516)
+        at io.agroal.pool.ConnectionHandler.transactionRollback(ConnectionHandler.java:328)
+        at io.agroal.narayana.LocalXAResource.rollback(LocalXAResource.java:85)
+        ... 40 more
+
+14:04:03 WARN  [io.ag.pool]] (pool-20-thread-1) Datasource '<default>': The object is already closed [90007-197]
+14:04:03 INFO  [io.quarkus]] (main) Quarkus stopped in 0.019s
+[INFO] H2 database was shut down; server status: Not started
+14:04:04 INFO  [io.qu.fl.FlywayProcessor]] (build-13) Adding application migrations in path '/Users/my/backend.my.com/target/classes/db/migration/' using protocol 'file'
+14:04:05 INFO  [io.qu.ar.pr.BeanProcessor]] (build-35) Found unrecommended usage of private members (use package-private instead) in application beans:
+14:04:06 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:06 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.client-secret" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:06 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.sync-client.socket-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:06 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.hibernate.show_sql" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:06 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.async-client.connection-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:06 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.introspection-url" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:06 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.async-client.connection-acquisition-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:06 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.client-id" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:06 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.sync-client.connection-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:06 WARN  [io.qu.ru.lo.LoggingSetupRecorder]] (main) Log level TRACE for category 'org.flyway' set below minimum logging level DEBUG, promoting it to DEBUG
+14:04:07 INFO  [or.fl.co.in.li.VersionPrinter]] (main) Flyway Community Edition 7.7.3 by Redgate
+14:04:07 INFO  [or.fl.co.in.da.ba.DatabaseType]] (main) Database: jdbc:mariadb://localhost:3306/my-backend (MariaDB 10.5)
+14:04:07 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully dropped pre-schema database level objects (execution time 00:00.002s)
+14:04:07 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully cleaned schema `my-backend` (execution time 00:00.289s)
+14:04:07 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully dropped post-schema database level objects (execution time 00:00.002s)
+14:04:07 INFO  [or.fl.co.in.li.VersionPrinter]] (main) Flyway Community Edition 7.7.3 by Redgate
+14:04:07 INFO  [or.fl.co.in.sc.JdbcTableSchemaHistory]] (main) Creating Schema History table `my-backend`.`flyway_quarkus_history` ...
+14:04:07 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:04:07 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:04:07 INFO  [or.fl.co.in.co.DbMigrate]] (main) Current version of schema `my-backend`: << Empty Schema >>
+14:04:07 INFO  [or.fl.co.in.co.DbMigrate]] (main) Migrating schema `my-backend` to version "0001 - initial-schema"
+14:04:08 INFO  [or.fl.co.in.co.DbMigrate]] (main) Migrating schema `my-backend` to version "0002 - quartz-tables"
+14:04:08 ERROR [or.fl.co.in.co.DbMigrate]] (main) Migration of schema `my-backend` to version "0002 - quartz-tables" failed! Please restore backups and roll back database and code!
+14:04:08 WARN  [io.qu.ar.impl]] (main) An error occurred during delivery of the @BeforeDestroyed(ApplicationScoped.class) event: javax.enterprise.inject.CreationException: Synthetic bean instance for io.quarkus.scheduler.runtime.SchedulerContext not initialized yet: io_quarkus_scheduler_runtime_SchedulerContext_97d170e1550eee4afc0af065b78cda302a97674c
+        - a synthetic bean initialized during RUNTIME_INIT must not be accessed during STATIC_INIT
+        - RUNTIME_INIT build steps that require access to synthetic beans initialized during RUNTIME_INIT should consume the SyntheticBeansRuntimeInitBuildItem
+        at io.quarkus.scheduler.runtime.SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.create(SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.zig:117)
+        at io.quarkus.scheduler.runtime.SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.get(SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.zig:155)
+        at io.quarkus.scheduler.runtime.SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.get(SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.zig:178)
+        at io.quarkus.arc.impl.CurrentInjectionPointProvider.get(CurrentInjectionPointProvider.java:52)
+        at io.quarkus.quartz.runtime.QuartzScheduler_Bean.create(QuartzScheduler_Bean.zig:616)
+        at io.quarkus.quartz.runtime.QuartzScheduler_Bean.create(QuartzScheduler_Bean.zig:743)
+        at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:96)
+        at io.quarkus.arc.impl.AbstractSharedContext.access$000(AbstractSharedContext.java:14)
+        at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:29)
+        at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:26)
+        at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:26)
+        at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
+        at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:26)
+        at io.quarkus.quartz.runtime.QuartzScheduler_Observer_destroy_4d75ae0cbe7e61a766b92c59cd8bbdeb2c1debf7.notify(QuartzScheduler_Observer_destroy_4d75ae0cbe7e61a766b92c59cd8bbdeb2c1debf7.zig:196)
+        at io.quarkus.arc.impl.EventImpl$Notifier.notifyObservers(EventImpl.java:283)
+        at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:268)
+        at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:218)
+        at io.quarkus.arc.impl.ArcContainerImpl.shutdown(ArcContainerImpl.java:355)
+        at io.quarkus.arc.Arc.shutdown(Arc.java:49)
+        at io.quarkus.arc.runtime.ArcRecorder$1.run(ArcRecorder.java:44)
+        at io.quarkus.runtime.StartupContext.runAllInReverseOrder(StartupContext.java:83)
+        at io.quarkus.runtime.StartupContext.close(StartupContext.java:72)
+        at io.quarkus.runner.ApplicationImpl.doStart(ApplicationImpl.zig:964)
+        at io.quarkus.runtime.Application.start(Application.java:90)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+        at io.quarkus.runner.bootstrap.StartupActionImpl.run(StartupActionImpl.java:212)
+        at io.quarkus.test.junit.QuarkusTestExtension.doJavaStart(QuarkusTestExtension.java:331)
+        at io.quarkus.test.junit.QuarkusTestExtension.ensureStarted(QuarkusTestExtension.java:643)
+        at io.quarkus.test.junit.QuarkusTestExtension.beforeAll(QuarkusTestExtension.java:689)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllCallbacks$8(ClassBasedTestDescriptor.java:368)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllCallbacks(ClassBasedTestDescriptor.java:368)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:192)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:78)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:136)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:188)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:154)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:128)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+        at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+        at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+java.lang.RuntimeException: java.lang.RuntimeException: Failed to start quarkus
+Caused by: java.lang.RuntimeException: Failed to start quarkus
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+
+Migration V0002__quartz-tables.sql failed
+-----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : (conn=5) Table 'qrtz_job_details' already exists
+Location   : db/migration/V0002__quartz-tables.sql (/Users/my/backend.my.com/target/classes/db/migration/V0002__quartz-tables.sql)
+Line       : 1
+Statement  : CREATE TABLE QRTZ_JOB_DETAILS
+(
+    SCHED_NAME        VARCHAR(120) NOT NULL,
+    JOB_NAME          VARCHAR(200) NOT NULL,
+    JOB_GROUP         VARCHAR(200) NOT NULL,
+    DESCRIPTION       VARCHAR(250) NULL,
+    JOB_CLASS_NAME    VARCHAR(250) NOT NULL,
+    IS_DURABLE        BOOL         NOT NULL,
+    IS_NONCONCURRENT  BOOL         NOT NULL,
+    IS_UPDATE_DATA    BOOL         NOT NULL,
+    REQUESTS_RECOVERY BOOL         NOT NULL,
+    JOB_DATA          BLOB         NULL,
+    PRIMARY KEY (SCHED_NAME, JOB_NAME, JOB_GROUP)
+)
+
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+
+Migration V0002__quartz-tables.sql failed
+-----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : (conn=5) Table 'qrtz_job_details' already exists
+Location   : db/migration/V0002__quartz-tables.sql (/Users/my/backend.my.com/target/classes/db/migration/V0002__quartz-tables.sql)
+Line       : 1
+Statement  : CREATE TABLE QRTZ_JOB_DETAILS
+(
+    SCHED_NAME        VARCHAR(120) NOT NULL,
+    JOB_NAME          VARCHAR(200) NOT NULL,
+    JOB_GROUP         VARCHAR(200) NOT NULL,
+    DESCRIPTION       VARCHAR(250) NULL,
+    JOB_CLASS_NAME    VARCHAR(250) NOT NULL,
+    IS_DURABLE        BOOL         NOT NULL,
+    IS_NONCONCURRENT  BOOL         NOT NULL,
+    IS_UPDATE_DATA    BOOL         NOT NULL,
+    REQUESTS_RECOVERY BOOL         NOT NULL,
+    JOB_DATA          BLOB         NULL,
+    PRIMARY KEY (SCHED_NAME, JOB_NAME, JOB_GROUP)
+)
+
+Caused by: java.sql.SQLSyntaxErrorException: (conn=5) Table 'qrtz_job_details' already exists
+Caused by: org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException: Table 'qrtz_job_details' already exists
+Caused by: java.sql.SQLException: Table 'qrtz_job_details' already exists
+
+[INFO] H2 database started in TCP server mode; server status: TCP server running at tcp://192.168.178.22:9092 (only local connections)
+14:04:10 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.sync-client.socket-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:10 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.async-client.connection-acquisition-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:10 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.client-id" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:10 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:10 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.client-secret" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:10 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.hibernate.show_sql" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:10 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.async-client.connection-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:10 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.introspection-url" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:10 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.sync-client.connection-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:12 WARN  [io.qu.ag.ru.AgroalConnectionConfigurer]] (main) Agroal does not support detecting if a connection is still usable after an exception for database kind: h2
+14:04:12 INFO  [or.fl.co.in.li.VersionPrinter]] (main) Flyway Community Edition 7.7.3 by Redgate
+14:04:12 INFO  [or.fl.co.in.da.ba.DatabaseType]] (main) Database: jdbc:h2:tcp://localhost/mem:test (H2 1.4)
+14:04:12 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully dropped pre-schema database level objects (execution time 00:00.001s)
+14:04:12 WARN  [or.fl.co.in.co.DbClean]] (main) Unable to clean unknown schema: "my-backend"
+14:04:12 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully dropped post-schema database level objects (execution time 00:00.000s)
+Hibernate: 
+    
+14:04:12 WARN  [io.qu.qu.ru.QuartzScheduler]] (main) `quarkus.quartz.force-start` is deprecated and will be removed in a future version - it is recommended to switch to `quarkus.quartz.start-mode`
+14:04:12 INFO  [io.qu.qu.ru.QuartzScheduler]] (main) Quartz scheduler is disabled by config property and will not be started
+14:04:12 INFO  [io.quarkus]] (main) Quarkus 1.13.3.Final on JVM started in 8.700s. Listening on: http://localhost:8081
+14:04:12 INFO  [io.quarkus]] (main) Profile h2 activated. 
+14:04:12 INFO  [io.quarkus]] (main) Installed features: [agroal, cdi, flyway, hibernate-orm, hibernate-orm-panache, hibernate-validator, jdbc-mariadb, mutiny, narayana-jta, oidc, quartz, rest-client, rest-client-jackson, resteasy, resteasy-jackson, resteasy-multipart, scheduler, security, security-properties-file, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-reactive-messaging, smallrye-reactive-messaging-amqp, vertx]
+[WARNING] Tests run: 7, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 4.306 s - in com.my.payment.methods.PaymentMethodRepositoryTest
+[INFO] Running com.my.payment.methods.PaymentMethodResourceTest
+14:04:12 INFO  [io.quarkus]] (main) Quarkus stopped in 0.015s
+[INFO] H2 database was shut down; server status: Not started
+14:04:13 INFO  [io.qu.fl.FlywayProcessor]] (build-34) Adding application migrations in path '/Users/my/backend.my.com/target/classes/db/migration/' using protocol 'file'
+14:04:14 INFO  [io.qu.ar.pr.BeanProcessor]] (build-7) Found unrecommended usage of private members (use package-private instead) in application beans:
+14:04:14 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:14 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.client-secret" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:14 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.sync-client.socket-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:14 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.hibernate.show_sql" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:14 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.async-client.connection-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:14 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.introspection-url" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:14 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.async-client.connection-acquisition-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:14 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.oauth2.client-id" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:14 WARN  [io.qu.config]] (main) Unrecognized configuration key "quarkus.kms.sync-client.connection-timeout" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+14:04:15 WARN  [io.qu.ru.lo.LoggingSetupRecorder]] (main) Log level TRACE for category 'org.flyway' set below minimum logging level DEBUG, promoting it to DEBUG
+14:04:15 INFO  [or.fl.co.in.li.VersionPrinter]] (main) Flyway Community Edition 7.7.3 by Redgate
+14:04:15 INFO  [or.fl.co.in.da.ba.DatabaseType]] (main) Database: jdbc:mariadb://localhost:3306/my-backend (MariaDB 10.5)
+14:04:15 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully dropped pre-schema database level objects (execution time 00:00.002s)
+14:04:16 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully cleaned schema `my-backend` (execution time 00:00.262s)
+14:04:16 INFO  [or.fl.co.in.co.DbClean]] (main) Successfully dropped post-schema database level objects (execution time 00:00.002s)
+14:04:16 INFO  [or.fl.co.in.li.VersionPrinter]] (main) Flyway Community Edition 7.7.3 by Redgate
+14:04:16 INFO  [or.fl.co.in.sc.JdbcTableSchemaHistory]] (main) Creating Schema History table `my-backend`.`flyway_quarkus_history` ...
+14:04:16 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:04:16 INFO  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) 0 rows affected
+14:04:16 INFO  [or.fl.co.in.co.DbMigrate]] (main) Current version of schema `my-backend`: << Empty Schema >>
+14:04:16 INFO  [or.fl.co.in.co.DbMigrate]] (main) Migrating schema `my-backend` to version "0001 - initial-schema"
+14:04:16 WARN  [or.fl.co.in.sq.DefaultSqlScriptExecutor]] (main) DB: Name 'mytable_pk' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+14:04:16 INFO  [or.fl.co.in.co.DbMigrate]] (main) Migrating schema `my-backend` to version "0002 - quartz-tables"
+14:04:16 ERROR [or.fl.co.in.co.DbMigrate]] (main) Migration of schema `my-backend` to version "0002 - quartz-tables" failed! Please restore backups and roll back database and code!
+14:04:16 WARN  [io.qu.ar.impl]] (main) An error occurred during delivery of the @BeforeDestroyed(ApplicationScoped.class) event: javax.enterprise.inject.CreationException: Synthetic bean instance for io.quarkus.scheduler.runtime.SchedulerContext not initialized yet: io_quarkus_scheduler_runtime_SchedulerContext_97d170e1550eee4afc0af065b78cda302a97674c
+        - a synthetic bean initialized during RUNTIME_INIT must not be accessed during STATIC_INIT
+        - RUNTIME_INIT build steps that require access to synthetic beans initialized during RUNTIME_INIT should consume the SyntheticBeansRuntimeInitBuildItem
+        at io.quarkus.scheduler.runtime.SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.create(SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.zig:117)
+        at io.quarkus.scheduler.runtime.SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.get(SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.zig:155)
+        at io.quarkus.scheduler.runtime.SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.get(SchedulerContext_360eeb610ab48a90056348e82e2c6a816b44f3e1_Synthetic_Bean.zig:178)
+        at io.quarkus.arc.impl.CurrentInjectionPointProvider.get(CurrentInjectionPointProvider.java:52)
+        at io.quarkus.quartz.runtime.QuartzScheduler_Bean.create(QuartzScheduler_Bean.zig:616)
+        at io.quarkus.quartz.runtime.QuartzScheduler_Bean.create(QuartzScheduler_Bean.zig:743)
+        at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:96)
+        at io.quarkus.arc.impl.AbstractSharedContext.access$000(AbstractSharedContext.java:14)
+        at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:29)
+        at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:26)
+        at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:26)
+        at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
+        at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:26)
+        at io.quarkus.quartz.runtime.QuartzScheduler_Observer_destroy_4d75ae0cbe7e61a766b92c59cd8bbdeb2c1debf7.notify(QuartzScheduler_Observer_destroy_4d75ae0cbe7e61a766b92c59cd8bbdeb2c1debf7.zig:196)
+        at io.quarkus.arc.impl.EventImpl$Notifier.notifyObservers(EventImpl.java:283)
+        at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:268)
+        at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:218)
+        at io.quarkus.arc.impl.ArcContainerImpl.shutdown(ArcContainerImpl.java:355)
+        at io.quarkus.arc.Arc.shutdown(Arc.java:49)
+        at io.quarkus.arc.runtime.ArcRecorder$1.run(ArcRecorder.java:44)
+        at io.quarkus.runtime.StartupContext.runAllInReverseOrder(StartupContext.java:83)
+        at io.quarkus.runtime.StartupContext.close(StartupContext.java:72)
+        at io.quarkus.runner.ApplicationImpl.doStart(ApplicationImpl.zig:964)
+        at io.quarkus.runtime.Application.start(Application.java:90)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+        at io.quarkus.runner.bootstrap.StartupActionImpl.run(StartupActionImpl.java:212)
+        at io.quarkus.test.junit.QuarkusTestExtension.doJavaStart(QuarkusTestExtension.java:331)
+        at io.quarkus.test.junit.QuarkusTestExtension.ensureStarted(QuarkusTestExtension.java:643)
+        at io.quarkus.test.junit.QuarkusTestExtension.beforeAll(QuarkusTestExtension.java:689)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllCallbacks$8(ClassBasedTestDescriptor.java:368)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllCallbacks(ClassBasedTestDescriptor.java:368)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:192)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:78)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:136)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:188)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:154)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:128)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+        at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+        at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+[ERROR] Tests run: 6, Failures: 0, Errors: 1, Skipped: 5, Time elapsed: 4.172 s <<< FAILURE! - in com.my.payment.methods.MyTest
+java.lang.RuntimeException: java.lang.RuntimeException: Failed to start quarkus
+Caused by: java.lang.RuntimeException: Failed to start quarkus
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+
+Migration V0002__quartz-tables.sql failed
+-----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : (conn=6) Table 'qrtz_job_details' already exists
+Location   : db/migration/V0002__quartz-tables.sql (/Users/my/backend.my.com/target/classes/db/migration/V0002__quartz-tables.sql)
+Line       : 1
+Statement  : CREATE TABLE QRTZ_JOB_DETAILS
+(
+    SCHED_NAME        VARCHAR(120) NOT NULL,
+    JOB_NAME          VARCHAR(200) NOT NULL,
+    JOB_GROUP         VARCHAR(200) NOT NULL,
+    DESCRIPTION       VARCHAR(250) NULL,
+    JOB_CLASS_NAME    VARCHAR(250) NOT NULL,
+    IS_DURABLE        BOOL         NOT NULL,
+    IS_NONCONCURRENT  BOOL         NOT NULL,
+    IS_UPDATE_DATA    BOOL         NOT NULL,
+    REQUESTS_RECOVERY BOOL         NOT NULL,
+    JOB_DATA          BLOB         NULL,
+    PRIMARY KEY (SCHED_NAME, JOB_NAME, JOB_GROUP)
+)
+
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+
+Migration V0002__quartz-tables.sql failed
+-----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : (conn=6) Table 'qrtz_job_details' already exists
+Location   : db/migration/V0002__quartz-tables.sql (/Users/my/backend.my.com/target/classes/db/migration/V0002__quartz-tables.sql)
+Line       : 1
+Statement  : CREATE TABLE QRTZ_JOB_DETAILS
+(
+    SCHED_NAME        VARCHAR(120) NOT NULL,
+    JOB_NAME          VARCHAR(200) NOT NULL,
+    JOB_GROUP         VARCHAR(200) NOT NULL,
+    DESCRIPTION       VARCHAR(250) NULL,
+    JOB_CLASS_NAME    VARCHAR(250) NOT NULL,
+    IS_DURABLE        BOOL         NOT NULL,
+    IS_NONCONCURRENT  BOOL         NOT NULL,
+    IS_UPDATE_DATA    BOOL         NOT NULL,
+    REQUESTS_RECOVERY BOOL         NOT NULL,
+    JOB_DATA          BLOB         NULL,
+    PRIMARY KEY (SCHED_NAME, JOB_NAME, JOB_GROUP)
+)
+
+Caused by: java.sql.SQLSyntaxErrorException: (conn=6) Table 'qrtz_job_details' already exists
+Caused by: org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException: Table 'qrtz_job_details' already exists
+Caused by: java.sql.SQLException: Table 'qrtz_job_details' already exists
+
+java.lang.RuntimeException: java.lang.RuntimeException: Failed to start quarkus
+Caused by: java.lang.RuntimeException: Failed to start quarkus
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+
+Migration V0002__quartz-tables.sql failed
+-----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : (conn=7) Table 'qrtz_job_details' already exists
+Location   : db/migration/V0002__quartz-tables.sql (/Users/my/backend.my.com/target/classes/db/migration/V0002__quartz-tables.sql)
+Line       : 1
+Statement  : CREATE TABLE QRTZ_JOB_DETAILS
+(
+    SCHED_NAME        VARCHAR(120) NOT NULL,
+    JOB_NAME          VARCHAR(200) NOT NULL,
+    JOB_GROUP         VARCHAR(200) NOT NULL,
+    DESCRIPTION       VARCHAR(250) NULL,
+    JOB_CLASS_NAME    VARCHAR(250) NOT NULL,
+    IS_DURABLE        BOOL         NOT NULL,
+    IS_NONCONCURRENT  BOOL         NOT NULL,
+    IS_UPDATE_DATA    BOOL         NOT NULL,
+    REQUESTS_RECOVERY BOOL         NOT NULL,
+    JOB_DATA          BLOB         NULL,
+    PRIMARY KEY (SCHED_NAME, JOB_NAME, JOB_GROUP)
+)
+
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+
+Migration V0002__quartz-tables.sql failed
+-----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : (conn=7) Table 'qrtz_job_details' already exists
+Location   : db/migration/V0002__quartz-tables.sql (/Users/my/backend.my.com/target/classes/db/migration/V0002__quartz-tables.sql)
+Line       : 1
+Statement  : CREATE TABLE QRTZ_JOB_DETAILS
+(
+    SCHED_NAME        VARCHAR(120) NOT NULL,
+    JOB_NAME          VARCHAR(200) NOT NULL,
+    JOB_GROUP         VARCHAR(200) NOT NULL,
+    DESCRIPTION       VARCHAR(250) NULL,
+    JOB_CLASS_NAME    VARCHAR(250) NOT NULL,
+    IS_DURABLE        BOOL         NOT NULL,
+    IS_NONCONCURRENT  BOOL         NOT NULL,
+    IS_UPDATE_DATA    BOOL         NOT NULL,
+    REQUESTS_RECOVERY BOOL         NOT NULL,
+    JOB_DATA          BLOB         NULL,
+    PRIMARY KEY (SCHED_NAME, JOB_NAME, JOB_GROUP)
+)
+
+Caused by: java.sql.SQLSyntaxErrorException: (conn=7) Table 'qrtz_job_details' already exists
+Caused by: org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException: Table 'qrtz_job_details' already exists
+Caused by: java.sql.SQLException: Table 'qrtz_job_details' already exists
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR] Tests run: 80, Failures: 0, Errors: 3, Skipped: 29
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  56.861 s
+[INFO] Finished at: 2021-05-03T14:04:25+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project my-backend: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/my/backend.my.com/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+my@Marcuss-MBP backend.my.com % 
